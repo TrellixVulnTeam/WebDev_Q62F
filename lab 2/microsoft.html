@@ -1,0 +1,500 @@
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Microsoft - домашняя страница официального сайта</title>
+        <link rel="icon" type="image/x-icon" href="images/microsoft_favicon.ico">
+    </head>
+    <style>
+        body{
+            
+            padding-left:150px;
+            padding-right:150px;
+        }
+        #close-image {
+            background-color: white;
+            border:0;
+        }
+        #close-image2{
+            background-color: white;
+            border:0;
+        }
+        #close-image3{
+            background-color: white;
+            border:0;
+        }
+        ul{
+            margin-top:15px;
+            font-family: sans-serif;
+            font-size:12px;
+            list-style: none;
+            margin-right: 330px;
+            color:rgb(140,141,145);
+        }
+        #close-image img{
+            margin-bottom: -13px;
+        }
+        #close-image2 img{
+            margin-bottom: -19px;
+        }
+        #close-image3 img{
+            margin-bottom: -15px;
+        }
+        li{
+            
+            display: inline;
+            color:rgb(140,141,145);
+            padding: 4px;
+            margin-bottom:5px; 
+        }
+        .footer1{
+            position: absolute;
+            text-align: center;
+            left: -350px;
+            bottom: 688px;
+            height:24%;
+            width: 100%;
+            font-size:13px;
+            font-family: sans-serif;
+            color: black;
+        }
+        .footer1 li{
+            padding-left:30px;
+            
+
+        }
+        .footer2{
+            position: absolute;
+            text-align: center;
+            left: 780px;
+            bottom: 714px;
+            height:24%;
+            width: 100%;
+            font-size:13px;
+            font-family: sans-serif;
+            color: black;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        a:hover{
+            border-bottom: 2px solid black;
+        }
+        #MainPic{
+            position: absolute;
+            text-align: center;
+            left: 150px;
+            top:70px;
+        }
+        .MainText{
+            position: absolute;
+            text-align: left;
+        }
+        #MainFir{
+            position: absolute;
+            left:90px;
+            top:165px;
+            width: 500px;
+            color:white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:34;
+            font-style:bold;
+        }
+        #MainSec{
+            position: absolute;
+            color:white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:15;
+            width:550px;
+            left:90px;
+            top:300px;
+        }
+        .button{
+            position: absolute;
+            width: 265px;
+            height: 45px;
+            font-size: 17px;
+            left:90px;
+            top:380px;
+            background-color: white;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+            border-bottom: 2px solid black;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+            border-bottom: 2px solid black;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        #mic1{
+            position:absolute;
+            left:150px;
+            width: 380px;
+            top:720px;
+        }
+        #mic2{
+            position:absolute;
+            left:555px;
+            width: 380px;
+            top:720px;
+        }
+        #mic3{
+            position:absolute;
+            left:960px;
+            width: 380px;
+            top:720px;
+        }
+        #mic4{
+            position:absolute;
+            left:1365px;
+            width: 385px;
+            top:720px;
+        }
+        #MFi{
+            position: absolute;
+            left:150px;
+            top:963px;
+            width: 380px;
+            height: 130px;
+            margin:5px;
+            font-weight:540;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #MainThi{
+            position: absolute;
+            left:150px;
+            top:995px;
+            width: 380px;
+            height: 130px;
+            margin:5px;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #MSe{
+            position: absolute;
+            left:555px;
+            top:963px;
+            width: 380px;
+            height: 130px;
+            margin:5px;
+            font-weight:540;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #MainFou{
+            position: absolute;
+            left:555px;
+            top:995px;
+            width: 380px;
+            height: 130px;
+            margin:5px;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #MTh{
+            position: absolute;
+            left:960px;
+            top:963px;
+            width: 380px;
+            height: 130px;
+            margin:5px;
+            font-weight:540;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #MainFif{
+            position: absolute;
+            left:960px;
+            top:995px;
+            width: 380px;
+            height: 130px;
+            margin:5px;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #MFo{
+            position: absolute;
+            left:1365px;
+            top:963px;
+            width: 380px;
+            height: 130px;
+            margin:5px;
+            font-weight:540;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #MainSix{
+            position: absolute;
+            left:1365px;
+            top:995px;
+            width: 380px;
+            height: 130px;
+            margin:5px;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .but6p{
+            position: absolute;
+            width: 140px;
+            height: 30px;
+            color:rgb(14,113,189);
+            font-size: 15px;
+            left:137px;
+            top:1080px;
+            background-color: white;
+            font-family: sans-serif;
+            font-weight: 400;
+            border: 0;
+        }
+        .but6p span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .but6p span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 1;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+            
+        }
+
+        .but6p:hover span {
+            padding-right: 11px;
+            border-bottom: 2px solid rgb(3, 91, 255);
+        }
+
+        .but6p:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .but1p{
+            position: absolute;
+            width: 140px;
+            height: 30px;
+            color:rgb(14,113,189);
+            font-size: 15px;
+            left:280px;
+            top:1080px;
+            background-color: white;
+            font-family: sans-serif;
+            font-weight: 400;
+            border: 0;
+        }
+        .but1p span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .but1p span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 1;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+            
+        }
+
+        .but1p:hover span {
+            padding-right: 11px;
+            border-bottom: 2px solid rgb(3, 91, 255);
+        }
+
+        .but1p:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .butdp{
+            position: absolute;
+            width: 140px;
+            height: 30px;
+            color:rgb(14,113,189);
+            font-size: 15px;
+            left:520px;
+            top:1065px;
+            background-color: white;
+            font-family: sans-serif;
+            font-weight: 540;
+            border: 0;
+        }
+        .butdp span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .butdp span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 1;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+            
+        }
+
+        .butdp:hover span {
+            padding-right: 11px;
+            border-bottom: 2px solid rgb(3, 91, 255);
+        }
+
+        .butdp:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .butdep{
+            position: absolute;
+            width: 140px;
+            height: 30px;
+            color:rgb(14,113,189);
+            font-size: 15px;
+            left:935px;
+            top:1065px;
+            background-color: white;
+            font-family: sans-serif;
+            font-weight: 540;
+            border: 0;
+        }
+        .butdep span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .butdep span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 1;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+            
+        }
+
+        .butdep:hover span {
+            padding-right: 11px;
+            border-bottom: 2px solid rgb(3, 91, 255);
+        }
+
+        .butdep:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .butmp{
+            position: absolute;
+            width: 140px;
+            height: 30px;
+            color:rgb(14,113,189);
+            font-size: 15px;
+            left:1353px;
+            top:1025px;
+            background-color: white;
+            font-family: sans-serif;
+            font-weight: 540;
+            border: 0;
+        }
+        .butmp span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .butmp span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 1;
+            top: 0;
+            right: -10px;
+            transition: 0.5s;
+            
+        }
+
+        .butmp:hover span {
+            padding-right: 11px;
+            border-bottom: 2px solid rgb(3, 91, 255);
+        }
+
+        .butmp:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+    <body>
+        <img src="/images/microsoft_logo.png" alt="">
+        <div class="footer1">
+            <ul>
+                <li><a href="#">Microsoft 365</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Windows</a></li>
+                <li><a href="#">Поддержка</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer2">
+            <ul>
+                <button id="close-image3">Продукты Майкрософт<img src="images/down_sign.png"></button>
+                <button id="close-image">Поиск<img src="images/search.png"></button>
+                <button id="close-image2">Войти<img src="images/avatar_logo.png"></button>
+            </ul>
+        </div>
+        <a href="#"><img src="/images/main_pic.webp" id="MainPic"></a>
+        <div class="MainText">
+            <p id="MainFir">Разработано для жизни —<br> сегодня и в будущем </p>
+            <p id="MainSec">Следующее поколение игр. Ваши цели. Друзья и семья. С Windows 11 вы<br> станете еще ближе к тому, что успели полюбить.</p>
+            <button class="button"><span>Проверьте, готов ли ваш ПК</span></button>
+        </div>
+
+        <a href="#"><img src="/images/microsoft_1.webp" id="mic1"></a>
+        <a href="#"><img src="/images/microsoft_2.webp" id="mic2"></a>
+        <a href="#"><img src="/images/microsoft_3.webp" id="mic3"></a>
+        <a href="#"><img src="/images/microsoft_4.webp" id="mic4"></a>
+        
+        <h3 id ="MFi">Microsoft 365</h3>
+        <p id="MainThi">Приложения Office премиум-класса, дополнительное облачное хранилище, 
+            продвинутые инструменты обеспечения безопасности и многое другое — все в одной удобной подписке.</p>
+        <h3 id ="MSe">Microsoft Edge</h3>
+        <p id="MainFou">Потрясающая производительность, больше конфиденциальности, 
+            продуктивности и дополнительных возможностей.</p>
+        <h3 id ="MTh">Microsoft OneDrive</h3>
+        <p id="MainFif">Сохраняйте свои файлы и фотографии на<br> OneDrive — они 
+            будут доступны с любого устройства и где угодно.</p>
+        <h3 id ="MFo">OneNote</h3>
+        <p id="MainSix">Приведите свои заметки и дела в порядок.</p>
+        <button class="but6p"><span>До 6 человек</span></button>    
+        <button class="but1p"><span>Для 1 человека</span></button> 
+        <button class="butdp" ><span>Скачать</span></button>     
+        <button class="butdep" ><span>Подробнее</span></button>     
+        <button class="butmp" ><span>Узнать больше</span></button>  
+    </body>
+</html>
