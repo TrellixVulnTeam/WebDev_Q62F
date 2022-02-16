@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset ="utf-8">
+    <title>Practice</title>
+</head>
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+        function checkAge(age) {
+            if (age > 18) {
+                return true;
+            } else {
+                // ...
+                return confirm('Did parents allow you?');
+            }
+            //no difference between
+            function checkAge(age) {
+                if (age > 18) {
+                    return true;
+                }
+                // ...
+                return confirm('Did parents allow you?');
+            }
+        }
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset ="utf-8">
+    <title>Practice</title>
+</head>
+<body>
+
+  <p>Before the script...</p>
+
+  <script>
+        function makeUser() {
+            return {
+                name: "John",
+                age: 35,
+                ref() {
+                    return this;
+                }
+            };
+    }
+    
+    let user = makeUser();
+    
+    alert( user.ref().age ); // John
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>
