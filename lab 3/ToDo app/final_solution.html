@@ -6,6 +6,7 @@
     </head>
     <style>
         .main{
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -19,10 +20,31 @@
             content: '\9949';
             width: 20px;
             height: 15px;
+            margin-left:15px;
             float:right;
             margin-top:2px;
             margin-right: 20px;
 
+        }
+        .task{
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .input-field{
+            width:200px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .add-button{
+            width: 70px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .task-checkbox:checked + span{
+            text-decoration: line-through;
         }
 
     </style>
