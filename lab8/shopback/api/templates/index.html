@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>lab8</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index_style.css">
+</head>
+<body>
+<a href="{% url 'mainMenu' %}">
+  <h1>My Store</h1>
+</a>
+
+<div class = "categ">
+  <fieldset>
+    <a [routerLink]="['/list', 1]">iPhone</a>
+  </fieldset>
+  <fieldset>
+    <a [routerLink]="['/list', 2]">Samsung</a>
+  </fieldset>
+  <fieldset>
+    <a [routerLink]="['/list', 3]">Xiaomi</a>
+  </fieldset>
+  <fieldset>
+    <a [routerLink]="['/list', 4]">HTC</a>
+  </fieldset>
+</div>
+
+</body>
+</html>

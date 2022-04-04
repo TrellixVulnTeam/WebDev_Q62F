@@ -1,12 +1,16 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { products } from '../products';
+
 @Component({
   selector: 'app-product-items',
   templateUrl: './product-items.component.html',
   styleUrls: ['./product-items.component.css']
 })
 export class ProductItemsComponent implements OnInit {
+
   products = products;
+  // @ts-ignore
+
   // @ts-ignore
   @Input categoryId: number;
   removeD(product:any){
@@ -24,6 +28,7 @@ export class ProductItemsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(JSON.stringify(products));
   }
 
 
