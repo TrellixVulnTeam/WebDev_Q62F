@@ -1,5 +1,7 @@
-{% extends "index.html" %}
+{% extends 'index.html' %}
+{% block prod_list %}
+    {% for i in prod_ll %}
+        <p>--->{{ i.name}} {{ i.prodcategory }}</p>
 
-{% for zxc in product %}
-    <h1>{{ zxc.name }}</h1>
-{% endfor %}
+    {% endfor %}
+{% endblock %}

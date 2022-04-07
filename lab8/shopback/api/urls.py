@@ -1,9 +1,10 @@
 from django.urls import path, re_path
-from api.views import fmethod, product_list,prod_list_html,product_detail, categories_l, categories_d
+from api.views import product_list,product_detail, categories_list, categories_d, prod_list_category
+
 urlpatterns=[
-    path('', fmethod, name = "mainMenu"),
     path('products/', product_list),
     path('products/<int:product_id>/', product_detail),
-    path('categories/', categories_l),
-    path('categories/<int:cat_id>/', categories_d)
+    path('products/category/<int:product_category>/', prod_list_category),
+    path('categories/', categories_list),
+    path('categories/<int:cat_id>/', categories_d),
 ]

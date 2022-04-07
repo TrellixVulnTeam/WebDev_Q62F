@@ -1,0 +1,7 @@
+{% extends 'index.html' %}
+{% block prod_list_category %}
+    {% for i in prod_ll %}
+        <p>-->{{ i.name}}</p>
+        <p>{{ product_category }}</p>
+    {% endfor %}
+{% endblock %}
