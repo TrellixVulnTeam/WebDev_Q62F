@@ -11,7 +11,28 @@ class Product(models.Model):
     prodcategory = models.IntegerField(default=1)
     is_active = models.BooleanField()
     likes = models.IntegerField()
+    class Meta:
+        verbose_name = 'Продукт'
+        verbose_name_plural = 'Продукты'
+        #ordering = ('name',)
+    def to_json(self):
+        return {
+            'name': self.name,
+            'price': self.price,
+            'description': self.description,
+            'count': self.count,
+            'rating': self.rating,
+            'imageSrc': self.imageSrc,
+            'amazonLink': self.amazonLink,
+            'prodcategory': self.prodcategory,
+            'is_active': self.is_active,
+            'likes': self.likes,
+        }
 
 class Category(models.Model):
     name = models.CharField(max_length=300)
+    def to_json(self):
+        return {
+            'name': self.name
+        }
 
